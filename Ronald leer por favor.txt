@@ -1,0 +1,2 @@
+La carpeta img va almacenada en public para q laravel la reconozca.
+
