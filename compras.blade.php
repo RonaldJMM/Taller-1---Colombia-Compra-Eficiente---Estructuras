@@ -16,39 +16,47 @@
       background-size: cover;
       color: black;
       background-color: background-color:rgb(255,0,0);opacity:0.78 ;
-      text-align: center;
-      align-items: center;
       position: relative;
-      margin: auto;
-      width: 1500px;
-      height: 600px;
-      margin-top: 30px;
-
+      width: 100%;
+      height: 90%;
+      margin-top:2%;
+      margin-left: 2%;
+      margin-right: 2%;
+    
+    
+      
  }
 
  #letrab{
 
      
    color: #FFFFFF;
-   
-
+  
 
 
  }
 
- #izquierda { position: relative;
-              width: 700px;
-               float: left;
-                height: 400px; } 
+ #izquierda { position: absolute;
+              width:30% ;
+              margin-top: 2%;
+              float: left;
+              height: 48%;
+              left: 5%;
+                 } 
 
  #derecha { position: relative;
-              float: right;
-            width: 400px;
-             ;
-             
-              height: 400px; }    
+            float: right;
+            width: 65%;
+            height: 50%;
+            border: currentColor;
+            right: 5%;
+            margin-top:2%;
+            margin-bottom: 2%
+            
 
- .esqinfder { position: absolute;
+             }    
+
+ .esqinfder { position: relative;
               bottom: 5px;
               right: 5px; 
               background: #ff0; }                          
@@ -79,124 +87,115 @@
 
 <div id="cover">   
 
-<div id="izquierda">
+
 
 <div class="container">
       
   <form class="w3-container" action="{{ url('compras')}}" method="POST" >
         
         {{ csrf_field() }}
-         
+       
+       <div id="izquierda">  
 
-          <h2 id="letrab">Registrar datos de representante legal</h2>
-          <br>
-          <br>
-            <p align="justify" >      
-           <label><b  >Nombres Representante Legal..........</b></label>
-          <input type="text" size="25" maxlength="30" ></p>
+              <h2 >Registrar datos de representante legal</h2>
+              <br>
+              <br>
+              <p align="left" >      
+             <label><b  >Nombres Representante Legal</b></label>
+             <input type="text" size="25" maxlength="30" ></p>
            
 
-           <p align="justify">      
-           <label><b>Apellidos Representante Legal..........</b></label>
-          <input type="text" size="25" maxlength="30"></p>
-            <p align="justify" >
+             <p align="justify">      
+             <label><b>Apellidos Representante Legal</b></label>
+             <input type="text" size="25" maxlength="30"></p>
+             <p align="justify" >
 
-           <label ><b>Cedula.................................................</b></label>
+            <label ><b>Cedula..................................</b></label>
             <input type="text" size="25" maxlength="30"></p>
             <p align="justify">
-            <label><b>Numero de contrato........................... </b></label>
-          <input type="text" size="25" maxlength="30"></p>
+            <label><b>Numero de contrato................ </b></label>
+            <input type="text" size="25" maxlength="30"></p>
 
-          <p align="justify">
+           <p align="justify">
          
-         <label><b>Descripcion del contrato.....................</b></label>
+           <label><b>Descripcion del contrato.........</b></label>
           <input type="text" size="25" maxlength="30"></p>
          <p align="justify">
-        <label><b>Valor total del contrato.......................</b></label>
+        <label><b>Valor total del contrato..........</b></label>
           <input type="text" size="25" maxlength="30"></p>
  
 
           <div class="esqinfder"></div> 
          
     </div>
-    
-
-
-
-   
-
-
-   <div id="derecha">
- 
-        
-      
-
-</div>
-
-
+  
 
           
-</div> 
 
-                 <br>
-             <br>
-             <h2  id="letrab" align="center"><strong>Registar productos</strong></h2>
-             <br>
 
-             <h4 align="center"> <input  type="text" name="nombre"></h4>
-              <br>
             
+    <div id="derecha">  
+             <h2  id="letrab" align="center"><strong>Comprar productos</strong></h2>
+             
   
-<h3 align="center"> Buscar producto por:  </h3>
-<div align="center" class="radio">
-  <label >
-    <input  type="radio" name="opciones" id="opciones_1">
-          Codigo
-  </label>
-</div>
-<div align="center"class="radio">
-  <label>
-    <input type="radio" name="opciones" id="opciones_2" >
-        Nombre
-  </label>
-</div>
-<div align="center" class="radio">
-  <label>
-    <input type="radio" name="opciones" id="opciones_3" >
-        Clase
-  </label>
-</div>
-<div  align="center" class="radio">
-  <label>
-    <input type="radio" name="opciones" id="opciones_4">
-        Tipo
-  </label>
-</div>
+            <h3 align="center"> Ingrese por favor los codigos de los productos que desea comprar:  </h3>
+
+            <p align="center" >      
+           <label><b  >Producto 1:</b></label>
+          <input type="text" size="25" maxlength="30" ></p>
+           
+
+           <p align="center">      
+           <label><b>Producto 2:</b></label>
+          <input type="text" size="25" maxlength="30"></p>
+            <p align="center" >
+
+           <label ><b>Producto 3:</b></label>
+            <input type="text" size="25" maxlength="30"></p>
+            <p align="center">
+
+            <label><b>Producto 4: </b></label>
+          <input type="text" size="25" maxlength="30"></p>
+          <p align="center">
+         
+         <label><b>Producto 5:</b></label>
+          <input type="text" size="25" maxlength="30"></p>
+         <p  align="center">
+        
+
+           <p align="center" >      
+           <label><b  >Producto 6:</b></label>
+          <input type="text" size="25" maxlength="30" ></p>
+           
+
+           <p  align="center">      
+           <label><b>Producto 7:</b></label>
+          <input type="text" size="25" maxlength="30"></p>
+
+            <p align="center" >
+           <label ><b>Producto 8:</b></label>
+            <input type="text" size="25" maxlength="30"></p>
+            <p align="center">
+
+            <label><b>Producto 9: </b></label>
+          <input type="text" size="25" maxlength="30"></p>
+          <p align="center">
+         
+         <label><b>Producto10:</b></label>
+          <input type="text" size="25" maxlength="30"></p>
+         <p align="center">
+       
             
-           <h2 align="center"> <button  type="submit" class="btn btn-primary btn-sm">Buscar</button></h2>
+           <h1 align="center"> <button  type="submit" class="btn btn-primary btn-sm">Comprar</button></h1>
            <!--  <br><button type="submit"> Buscar </button> --> 
 
        <div class="esqinfder"></div>     
-
-
-  
-          
-
+   
+    </div>
          
       </form>
 
-           <br>
-           <br>
-           <br>
-             <h5 align="left"><span class="badge badge-pill badge-info">Importante</span></h5>
-           <p id="letrab" align="left">Para poder efectuar la compra en COLOMBIA COMPRA EFICIENTE debe saber el numero de contrato y el valor del mismo </p>
-
-           <br>
-           <br>
-           <br>
-
-
-</div>
+   
 
 </body>
 </html>
