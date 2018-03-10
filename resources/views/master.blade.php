@@ -2,12 +2,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<style >
+  
+body{
+
+  background:  url(img/technology-3190200_1920.jpg) ;
+  background-size: cover;
+  margin-left: 10%;
+  margin-right: 10%;
+
+
+
+}
+
+
+</style>
+
+
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="UTF-8">
 
     <title>Master</title>
 </head>
+
+
 <body>
+
+
     <nav class="navbar navbar-dark bg-dark">
        <a class="navbar-brand" href="#">Colombia Compra Eficiente</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

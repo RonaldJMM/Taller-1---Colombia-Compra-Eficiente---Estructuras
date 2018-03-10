@@ -19,7 +19,7 @@
       background-size: cover;
       color: black;
       height: 60%;
-      background-color: background-color:rgb(255,0,0);opacity:0.78 ;
+      background-color: background-color:rgb(255,0,0); ;
       text-align: center;
       align-items: center;
       
@@ -99,12 +99,12 @@
 
 
 
+        </div>
                   
         </section> 
 
 
 
-        </div>
 
         </body>
 </html>
