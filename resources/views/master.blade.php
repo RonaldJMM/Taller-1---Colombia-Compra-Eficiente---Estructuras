@@ -3,21 +3,7 @@
 <html lang="en">
 <head>
 
-<style >
-  
-body{
 
-  background:  url(img/technology-3190200_1920.jpg) ;
-  background-size: cover;
-  margin-left: 10%;
-  margin-right: 10%;
-
-
-
-}
-
-
-</style>
 
 
 
@@ -38,6 +24,9 @@ body{
         </button>
          <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="http://localhost/TallerColombiaCompraEficente/public/" >Inicio <span class="sr-only">(current)</span></a>
+              </li>
               <li class="nav-item active">
                 <a class="nav-link" href="informacion" >Informacion <span class="sr-only">(current)</span></a>
               </li>

@@ -108,7 +108,7 @@
 
              <p align="justify">      
              <label><b>Apellidos Representante Legal</b></label>
-             <input type="text" size="25" maxlength="30" name="apellidosContrato"></p>
+             <input type="text" size="25" maxlength="30" name="apellidoContrato"></p>
              <p align="justify" >
 
             <label ><b>Cedula..................................</b></label>

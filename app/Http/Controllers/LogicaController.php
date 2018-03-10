@@ -280,7 +280,7 @@ class LogicaController extends Controller {
         $codigos[]=["Codigo"=>30121715, "Nombre"=>"Junta de expansión de puente","valor"=>35000, "clase"=>"C", "tipo"=>1];
         $codigos[]=["Codigo"=>30121716, "Nombre"=>"Montura de asiento de puente","valor"=>35000, "clase"=>"C", "tipo"=>1];
         $codigos[]=["Codigo"=>30121717, "Nombre"=>"Baranda","valor"=>35000, "clase"=>"C", "tipo"=>1];
-        $codigos[]=["Codigo"=>30121718, "Nombre"=>"Cerca de seguridad y red cara la caída de rocas","valor"=>35000, "clase"=>"C", "tipo"=>1];
+        $codigos[]=["Codigo"=>30121718, "Nombre"=>"Cerca de seguridad y red cara la caída de rocas","valor"=>35000, "clase"=>"C", "tipo"=>1];                           
         $codigos[]=["Codigo"=>30121719, "Nombre"=>"Separador de seguridad de calle","valor"=>35000, "clase"=>"C", "tipo"=>1];
         $codigos[]=["Codigo"=>30121800, "Nombre"=>"Materiales de arquitectura paisajística","valor"=>35000, "clase"=>"C", "tipo"=>1];
         $codigos[]=["Codigo"=>30121801, "Nombre"=>"Rejilla para árbol","valor"=>35000, "clase"=>"C", "tipo"=>1];
@@ -726,7 +726,7 @@ class LogicaController extends Controller {
                     'codigoProducto10'=>$codigoProducto10 
                 ];
                 
-                
+
                 if($totalSumaCodigos>$valorContrato){
                    return view('resultadoCompraError',$inyeccionContrato);
                 }else{

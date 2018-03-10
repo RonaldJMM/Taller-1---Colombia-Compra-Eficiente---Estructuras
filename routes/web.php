@@ -11,8 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/master', function () {
     return view('master');
+});
+
+Route::get('/', function () {
+    return view('inicio');
 });
 
 

@@ -26,7 +26,7 @@ body{
 
 table{
 
-     margin-left: 35%;
+     margin-left: 2%;
      margin-top: 2%;
 
 
@@ -68,50 +68,156 @@ table{
     <tr>
 
       <th width="25%">Nombre del Comprador:</th>
-      <td>luis</td>
+      <td><?php echo $nombreContrato; ?></td>
       
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">Apellido del comprador:</th>
-       <td>morales</td>
+       <td><?php echo $apellidoContrato; ?></td>
 
     </tr>
     <tr>
       <th scope="row">Cedula:</th>
-      <td>12355</td>
+      <td><?php echo $cedulaContrato; ?></td>
       
     </tr>
     <tr>
       <th scope="row">Numero del contrato:</th>
-       <td>00</td>
+       <td><?php echo $numeroContrato; ?></td>
     </tr>
      
       <tr>
       <th scope="row">Descripcion del contrato:</th>
-       <td>00</td>
+       <td><?php echo $descripcionContrato; ?></td>
     </tr>
      
       <tr>
       <th scope="row">Valor del contrato:</th>
-       <td>999</td>
+       <td><?php echo $valorContrato; ?></td>
     </tr>
 
      <tr>
       <th scope="row">Numero del contrato:</th>
-       <th>33</th>
+       <td><?php echo $numeroContrato; ?></td>
     </tr>
 
      <tr>
-      <th scope="row">Productos comprados:</th>
-       <th>55</th>
+      <th scope="row"><br><br>Productos registrados:</th>
     </tr>
-
-
-
   </tbody>
 </table>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Codigo</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Clase</th>
+      <th scope="col">Tipo</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <?php 	$contador3=0;
+    		foreach ($datos as $key => $value) {
+                    foreach ($value as $key2 => $values) {
+                    	
+                    	echo "<tr>";
+                        if($key2=="Codigo"){
+                            if($values==$codigoProducto1){
+                            	$contador3++;
+                            	echo "<th>",$contador3,"</th>";
+                                foreach ($value as $key3 => $values2) {
+                                    
+                                    echo "<th>",$values2,"</th>";
+                                }
+                                
+                            }
+                            if($values==$codigoProducto2){
+                            	$contador3++;
+                            	echo "<th>",$contador3,"</th>";
+                                foreach ($value as $key3 => $values2) {
+                                    echo "<th>",$values2,"</th>";
+                                }
+                                
+                            }
+                            if($values==$codigoProducto3){
+                            	$contador3++;
+                            	echo "<th>",$contador3,"</th>";
+                                foreach ($value as $key3 => $values2) {
+                                    echo "<th>",$values2,"</th>";
+                                }
+                                
+                            }
+                            if($values==$codigoProducto4){
+                            	$contador3++;
+                            	echo "<th>",$contador3,"</th>";
+                                foreach ($value as $key3 => $values2) {
+                                    echo "<th>",$values2,"</th>";
+                                }
+                                
+                            }
+                            if($values==$codigoProducto5){
+                            	$contador3++;
+                            	echo "<th>",$contador3,"</th>";
+                                foreach ($value as $key3 => $values2) {
+                                    echo "<th>",$values2,"</th>";
+                                }
+                                
+                            }
+                            if($values==$codigoProducto6){
+                            	$contador3++;
+                            	echo "<th>",$contador3,"</th>";
+                                foreach ($value as $key3 => $values2) {
+                                    echo "<th>",$values2,"</th>";
+                                }
+                                
+                            }
+                            if($values==$codigoProducto7){
+                            	$contador3++;
+                            	echo "<th>",$contador3,"</th>";
+                                foreach ($value as $key3 => $values2) {
+                                    echo "<th>",$values2,"</th>";
+                                }
+                                
+                            }
+                            if($values==$codigoProducto8){
+                            	$contador3++;
+                            	echo "<th>",$contador3,"</th>";
+                                foreach ($value as $key3 => $values2) {
+                                    echo "<th>",$values2,"</th>";
+                                }
+                                
+                            }
+                            if($values==$codigoProducto9){
+                            	$contador3++;
+                            	echo "<th>",$contador3,"</th>";
+                                foreach ($value as $key3 => $values2) {
+                                    echo "<th>",$values2,"</th>";
+                                }
+                                
+                            }
+                            if($values==$codigoProducto10){
+                            	$contador3++;
+                            	echo "<th>",$contador3,"</th>";
+                                foreach ($value as $key3 => $values2) {
+                                    echo "<th>",$values2,"</th>";
+                                }
+                                
+                            }
+
+                        }
+                        echo "</tr>";
+                    }
+                }
+
+    	?>
+  </tbody>
+</table>
+
 
 
 
