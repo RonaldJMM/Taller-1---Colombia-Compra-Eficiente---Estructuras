@@ -1,3 +1,5 @@
+@extends('master')
+@section('contenido')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,7 +77,9 @@
           
          
           <div id="error">
-          <input type="button" onclick="alert('¡Por favor seleccione los productos mas importantes que no superen el valor del contrato o digite un valor de contrato mas grande   !')" value="Solucion" />    
+          <input type="button" onclick="alert('¡Por favor seleccione los productos mas importantes que no superen el valor del contrato o digite un valor de contrato mas grande   !')" value="Solucion" /> 
+          
+
           </div>
         </article>
          
@@ -100,3 +104,4 @@
 
 
 </html>
+@stop

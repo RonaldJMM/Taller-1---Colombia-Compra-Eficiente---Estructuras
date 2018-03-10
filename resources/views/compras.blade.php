@@ -1,7 +1,9 @@
+@extends('master')
+@section('contenido')
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Formulario</title>
+  <title>Compras</title>
 
 <style>
 
@@ -69,7 +71,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -91,7 +92,7 @@
 
 <div class="container">
       
-  <form class="w3-container" action="{{ url('compras')}}" method="POST" >
+  <form class="w3-container" action="{{ url('comprasC')}}" method="POST" >
         
         {{ csrf_field() }}
        
@@ -102,27 +103,27 @@
               <br>
               <p align="left" >      
              <label><b  >Nombres Representante Legal</b></label>
-             <input type="text" size="25" maxlength="30" ></p>
+             <input type="text" size="25" maxlength="30" name="nombreContrato"></p>
            
 
              <p align="justify">      
              <label><b>Apellidos Representante Legal</b></label>
-             <input type="text" size="25" maxlength="30"></p>
+             <input type="text" size="25" maxlength="30" name="apellidosContrato"></p>
              <p align="justify" >
 
             <label ><b>Cedula..................................</b></label>
-            <input type="text" size="25" maxlength="30"></p>
+            <input type="text" size="25" maxlength="30" name="cedulaContrato"></p>
             <p align="justify">
             <label><b>Numero de contrato................ </b></label>
-            <input type="text" size="25" maxlength="30"></p>
+            <input type="text" size="25" maxlength="30" name="numeroContrato"></p>
 
            <p align="justify">
          
            <label><b>Descripcion del contrato.........</b></label>
-          <input type="text" size="25" maxlength="30"></p>
+          <input type="text" size="25" maxlength="30" name="descripcionContrato"></p>
          <p align="justify">
         <label><b>Valor total del contrato..........</b></label>
-          <input type="text" size="25" maxlength="30"></p>
+          <input type="text" size="25" maxlength="30" name="valorContrato"></p>
  
 
           <div class="esqinfder"></div> 
@@ -142,47 +143,47 @@
 
             <p align="center" >      
            <label><b  >Producto 1:</b></label>
-          <input type="text" size="25" maxlength="30" ></p>
+          <input type="text" size="25" maxlength="30" name="codigoProducto1"></p>
            
 
            <p align="center">      
            <label><b>Producto 2:</b></label>
-          <input type="text" size="25" maxlength="30"></p>
+          <input type="text" size="25" maxlength="30" name="codigoProducto2"></p>
             <p align="center" >
 
            <label ><b>Producto 3:</b></label>
-            <input type="text" size="25" maxlength="30"></p>
+            <input type="text" size="25" maxlength="30" name="codigoProducto3"></p>
             <p align="center">
 
             <label><b>Producto 4: </b></label>
-          <input type="text" size="25" maxlength="30"></p>
+          <input type="text" size="25" maxlength="30" name="codigoProducto4"></p>
           <p align="center">
          
          <label><b>Producto 5:</b></label>
-          <input type="text" size="25" maxlength="30"></p>
+          <input type="text" size="25" maxlength="30" name="codigoProducto5"></p>
          <p  align="center">
         
 
            <p align="center" >      
            <label><b  >Producto 6:</b></label>
-          <input type="text" size="25" maxlength="30" ></p>
+          <input type="text" size="25" maxlength="30" name="codigoProducto6"></p>
            
 
            <p  align="center">      
            <label><b>Producto 7:</b></label>
-          <input type="text" size="25" maxlength="30"></p>
+          <input type="text" size="25" maxlength="30" name="codigoProducto7"></p>
 
             <p align="center" >
            <label ><b>Producto 8:</b></label>
-            <input type="text" size="25" maxlength="30"></p>
+            <input type="text" size="25" maxlength="30" name="codigoProducto8"></p>
             <p align="center">
 
             <label><b>Producto 9: </b></label>
-          <input type="text" size="25" maxlength="30"></p>
+          <input type="text" size="25" maxlength="30" name="codigoProducto9"></p>
           <p align="center">
          
          <label><b>Producto10:</b></label>
-          <input type="text" size="25" maxlength="30"></p>
+          <input type="text" size="25" maxlength="30" name="codigoProducto10"></p>
          <p align="center">
        
             
@@ -199,3 +200,4 @@
 
 </body>
 </html>
+@stop

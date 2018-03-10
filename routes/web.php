@@ -16,9 +16,9 @@ Route::get('/', function () {
 });
 
 
-Route::get('/formulario', function () {
+Route::get('/busqueda', function () {
 
-    return view('formulario');
+    return view('busqueda');
     
 });
 
@@ -28,7 +28,12 @@ Route::get('/compras', function () {
     
 });
 
+Route::get('/informacion', function () {
 
+    return view('informacion');
+    
+});
 
-Route::post('formulario' , 'LogicaController@stock');
-Route::post('compras' , 'LogicaController@compra');
+Route::post('informacionC' , 'LogicaController@informacion');
+Route::post('busquedaC' , 'LogicaController@stock');
+Route::post('comprasC' , 'LogicaController@compra');
